@@ -2,6 +2,7 @@
 <div *ngIf="templateFlag; else elseData">Ng Template If Condition</div>
 <ng-template #elseData>Ng Template Else Condition</ng-template>
 <hr />
+
 <h1>ng-Container</h1>
 <table>
   <tr>
@@ -13,14 +14,11 @@
     </ng-container>
   </tr>
 </table>
-<ul>
-  <ng-container *ngFor="let data of arrayData; let i = index">
-    <li>{{ data }}</li>
-  </ng-container>
-</ul>
-<hr />
+
+<hr/>
 <h1>ng-Content</h1>
 <app-one-comp>
   <h5 header>Hello Team</h5>
   <p content>I have this ng content which I am showing at child component</p>
 </app-one-comp>
+

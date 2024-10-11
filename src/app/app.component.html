@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <ul>
+            <ng-container *ngFor="let topic of angularTopic; let i = index">
+              <li><a href="" [routerLink]="['/{{topic}}']">{{ topic }}</a></li>
+            </ng-container>
+          </ul> 
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
