@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./angtemplate.component.scss']
 })
 export class AngtemplateComponent {
-
+  public templateFlag = false;
 }

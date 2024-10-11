@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 import { AngcontainerComponent } from './angcontainer/angcontainer.component';
 import { AngcontentComponent } from './angcontent/angcontent.component';
 import { AngtemplateComponent } from './angtemplate/angtemplate.component';
-
+import { Router, RouterLink } from '@angular/router';
 
 @NgModule({
   declarations: [
