@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AngcontainerComponent } from './angcontainer/angcontainer.component';
 import { AngcontentComponent } from './angcontent/angcontent.component';
 import { AngtemplateComponent } from './angtemplate/angtemplate.component';
+import { PageOneComponent } from './page-one/page-one.component';
 
 const routes: Routes = [{path:'',component:AngcontainerComponent},
-  {path:'ngcontainer',component:AngcontainerComponent},
-  {path:'ngcontent',component:AngcontentComponent},
-  {path:'ngtemplate',component:AngtemplateComponent}
+  {path:'Container',component:AngcontainerComponent},
+  {path:'Content',component:AngcontentComponent},
+  {path:'Template',component:AngtemplateComponent},
+  {path:'**',component:PageOneComponent}
 
 ];
 

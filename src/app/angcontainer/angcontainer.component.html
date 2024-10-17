@@ -1,14 +1,20 @@
+<h3>using normal list</h3>
+
 <ul>
-    <ng-container *ngFor="let data of arrayData; let i = index">
-      <li>{{ data }}</li>
-    </ng-container>
-  </ul>
-  <code>
-      <pre>
-    <ul>
-        <ng-container *ngFor="let data of arrayData; let i = index">
-          <li>{{ data }}</li>
-        </ng-container>
-      </ul>
-    </pre>
-</code>
+  <ng-container *ngFor="let data of arrayData; let i = index">
+    <li>{{ data }}</li>
+  </ng-container>
+</ul>
+<hr>
+<h3>using mat-list-item</h3>
+<mat-list>
+  <mat-list-item *ngFor="let data of arrayData; let i = index">
+    {{ data }}
+  </mat-list-item>
+</mat-list>
+<hr>
+<h1>code for the UI</h1>
+<pre>
+  {{code}}
+</pre>
+
