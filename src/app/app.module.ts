@@ -15,6 +15,7 @@ import { AngcontainerComponent } from './angcontainer/angcontainer.component';
 import { AngcontentComponent } from './angcontent/angcontent.component';
 import { AngtemplateComponent } from './angtemplate/angtemplate.component';
 import { Router, RouterLink } from '@angular/router';
+import { FormCompComponent } from './form-comp/form-comp.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Router, RouterLink } from '@angular/router';
     MainComponent,
     AngcontainerComponent,
     AngcontentComponent,
-    AngtemplateComponent
+    AngtemplateComponent,
+    FormCompComponent
   ],
   imports: [
     BrowserModule,
